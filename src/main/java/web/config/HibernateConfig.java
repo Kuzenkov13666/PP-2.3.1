@@ -20,7 +20,7 @@ import java.util.Properties;
 @PropertySource("classpath:db.properties")
 @EnableTransactionManagement
 @ComponentScan("web")
-@EnableJpaRepositories("web.repository")
+@EnableJpaRepositories("web.daoRepository")
 public class HibernateConfig {
     private final Environment env;
 
